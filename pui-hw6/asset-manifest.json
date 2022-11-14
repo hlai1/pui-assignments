@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pui-assignments/pui-hw6/static/css/main.d7415668.css",
+    "main.js": "/pui-assignments/pui-hw6/static/js/main.3e20ed57.js",
+    "static/js/787.8936b528.chunk.js": "/pui-assignments/pui-hw6/static/js/787.8936b528.chunk.js",
+    "index.html": "/pui-assignments/pui-hw6/index.html",
+    "main.d7415668.css.map": "/pui-assignments/pui-hw6/static/css/main.d7415668.css.map",
+    "main.3e20ed57.js.map": "/pui-assignments/pui-hw6/static/js/main.3e20ed57.js.map",
+    "787.8936b528.chunk.js.map": "/pui-assignments/pui-hw6/static/js/787.8936b528.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7415668.css",
+    "static/js/main.3e20ed57.js"
+  ]
+}
