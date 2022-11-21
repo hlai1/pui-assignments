@@ -51,7 +51,6 @@ a {
 
 .flex {
     display: flex;
-    /* gap: var(--gap, 1rem); */
 }
 
 .logo {
@@ -193,7 +192,7 @@ a {
   
 
   .services {
-    padding: 15px 0; 
+    padding: 15px 0 0 0; 
     position: relative;
   }
 
@@ -238,11 +237,15 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
-    padding: 5px 0;
+    padding: 15px 0;
   }
 
   .username, .username-1 {
     font-size: 14px;
+  }
+
+  .inner-flex {
+    display: flex;
   }
 
   .parent-flex-small{
@@ -298,6 +301,13 @@ a {
   @media screen and (max-width: 600px) {
     .flex-item-right, .flex-item-left, .left {
       flex: 100%;
+    }
+    .inner-flex {
+      display: flex;
+      flex-direction: column;
+    }  
+    .primary-navigation {
+      margin: 10px 0;
     }
   }
 
