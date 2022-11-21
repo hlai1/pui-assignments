@@ -6,16 +6,24 @@
 
 .desc{
     display: flex;
+    align-items: center;
+}
+
+.date {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
 }
 
 .subhead {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 0 10px 0;
 }
 
 .proj-title {
-    font-size: 44px;
+    font-size: 45px;
     padding: 0 30px;
     font-weight: 600;
 }
@@ -31,28 +39,59 @@
 
 .description {
     font-size: 16px;
+    line-height: 1.6;
+    margin: 25px 0;
 }
 
 .subheading {
     font-weight: 900;
-    font-size: 2vw;
+    font-size: 24px;
     align-items: center;
     margin: 10px 0;
+    color: #45992f;
 }
+
 .intro {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
+
 @media only screen and (max-width: 920px){
-    .description {
+    .description, .date {
         font-size: 14px;
+        line-height: 1.4;
+    }
+    .proj-title {
+        font-size: 28px;
+        padding: 0 30px;
+        font-weight: 600;
+    }
+    .subheading {
+        font-weight: 900;
+        font-size: 20px;
+        align-items: center;
+        margin: 10px 0;
+        color: #45992f;
     }
 }
 
 @media only screen and (max-width: 775px){
-    .description {
+    .description, .date {
         font-size: 12px;
+        line-height: 1.2;
+    }
+    .proj-title {
+        font-size: 24px;
+        padding: 0 30px;
+        font-weight: 600;
+    }
+    .subheading {
+        font-weight: 900;
+        font-size: 16px;
+        align-items: center;
+        margin: 10px 0;
+        color: #45992f;
     }
 }
