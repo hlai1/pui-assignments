@@ -5,7 +5,8 @@
 
 body {
     font-family: "Inter", sans-serif;
-    width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     /* padding-left: 15%;
@@ -62,7 +63,9 @@ a {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    width: calc(100%-25px);
+    width: 100%;
+    overflow-x: hidden;
+    /* width: calc(100% - 25px); */
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 100;
 }
