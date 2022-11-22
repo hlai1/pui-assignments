@@ -77,6 +77,22 @@
     }
 }
 
+.img-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    /* margin: 3em 3em; */
+    width: 75%;
+    margin: auto;
+}
+
+.port {
+    width: 25%;
+    margin: 0 30px;
+}
+
 @media only screen and (max-width: 775px){
     .description, .date {
         font-size: 12px;

@@ -34,14 +34,20 @@ function handleScroll(id, animation) {
     let client = (document.querySelector("#proj"+id).getBoundingClientRect());
     let h = client.height;
     let y = client.y;
-    if (y + h > H){
-        animation.seek(0);
-    }
-    else{
+    
+    // if (y + h/2 > H){
+    //     console.log("true");
+    //     animation.seek(0);
+    // }
+    // else{
         // animation.seek(((-1/h)*y + (H*1.0/h+0.5))*1800);
         // animation.seek(((-2/h)*y + ((2*H)/h-2))*1000);
-        animation.seek(((-1/h)*y + (H/h-1))*1000);
-    }
+        // animation.seek(((-1/h)*y + (H/h-1))*1000);
+        let a = 0.25;
+        let b = 0.90;
+        let scrollFormula = (1/(h*(a-b)) * y - (H-a*h)/(h*(a-b)));
+        animation.seek(scrollFormula*500);
+    //}
 }
 
 function easeIn(id, animation){
