@@ -70,7 +70,7 @@
 
         <div class="body-text"> 
             <div class="intros">
-                    <div class="subheading">Current Gap</div>
+                    <div class="subheading">Project Motivation</div>
             </div>
             <div class="description">
                 Music lovers and listeners alike have platforms such as Spotify, Apple Music, and Youtube Music to find up and coming releases from loved artists. However, it often becomes more and more difficult to find relevant music in the current age with so many emerging artists. Thus, the goal of my 15-112 term project was to streamline and maximize the music-finding process for users–enabling a computer algorithm to compute and recommend songs for users based on their current listening.
@@ -79,11 +79,12 @@
 
         <div class="body-text"> 
             <div class="intros">
-                    <div class="subheading">Project Overview</div>
+                    <div class="subheading">Timeline</div>
             </div>
+
             <section class="description">
                 <div class="table">
-                    <div class="col descriptions">
+                    <div class="col descriptions pad">
                        <div class="bold">
                         Research
                        </div>
@@ -91,7 +92,7 @@
                         Analyzed the current market and what song-recommendation platforms existed, and what metrics they used to suggest songs to users; researched what song metrics the spotify API could grab, and how I could utilize those to categorize and recommend songs to users
                       </div>
                     </div>
-                    <div class="col descriptions">
+                    <div class="col descriptions pad">
                         <div class="bold">
                             Design
                         </div>
@@ -99,7 +100,7 @@
                             Deliberately integrated aesthetic user interface using Tkinter package and Python graphics; created initial wireframes to brainstorm the interface.
                         </div>
                     </div>
-                    <div class="col descriptions">
+                    <div class="col descriptions pad">
                         <div class="bold">
                             Software
                         </div>
@@ -109,7 +110,7 @@
                     </div>
                 </div>
               
-              </section>
+            </section>
         </div>
 
         <div class="body-text"> 
@@ -144,6 +145,14 @@
                 The trickiest part of my project was generating the playlist. I had to figure out how I wanted to categorize songs based on user inputs—what counts as a “happy” song or “sad” song? In order to do this, I ended up creating a matrix for the songs that directly aligned with the user’s inputted favorite artist, running that against a big list of songs overall, each with their own matrix (keeping track of factors like genre, danceability, liveness, tempo, etc) and adding that song to the current playlist if only a certain number of characteristics are “similar enough” or if the compatibility is above a certain score. Furthermore, I had to check that each song wasn’t already present in the list (no duplicates--”if x not in songPlaylist” then add the song). Additional functionality involved letting the user delete songs in the list they didn’t like and the algorithm would recurse to regenerate similar songs. Finally, once users generated the playlist once, they had the option of having a new playlist generated for them based on their previous playlist. This  involved the basic concept behind graph algorithms–first, I generated a dictionary containing sets of songs and then, compared similarities between key-value pairs in the dictionary, before finally, adding songs to the new playlist with the greatest similarity.
             </div>
         </div>
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Summary</div>
+            </div>
+            <div class="description">
+                The goal of this project was to apply my passion of listening to Spotify music to a real-world project. I was able to apply my learnings from 15-112 on data structures and algorithms in python and also learn about spotipy, webscraping, and APIs in general, to create a functional and modifiable playlist generator. In the future, I’d love to look into using more metrics to recommend songs to users, or to grab user’s previous listening habits to recommend a new playlist. After all, it’s music for you. By you.
+            </div>
+        </div>
 
         
 
@@ -156,7 +165,7 @@
                             <div>prev</div>
                         </div>   
                     </a>
-                    <a class="small-text" href = "gaugeme.html">   
+                    <a class="small-text" href = "pamela.html">   
                         <div class="button right">
                             <div>next</div>
                             <img class="arrow" alt="right-arrow" src="../assets/right.png" />
@@ -165,6 +174,7 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="container">
                 <div class="services-list-1">

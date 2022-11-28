@@ -64,6 +64,10 @@ header, .rows {
     flex: 1;        /* distributes space on the line equally among items */
   }
 
+  .pad {
+    padding: 0 15px 0 0;
+  }
+
 .subheading {
     font-weight: 900;
     font-size: 24px;
