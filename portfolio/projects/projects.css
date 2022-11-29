@@ -133,6 +133,12 @@ header, .rows {
     border-radius: 16px;
 }
 
+.small-img {
+    width: 25%;
+    margin: 5px 30px;
+    border-radius: 16px;
+}
+
 .info-arch {
     width: 80%;
 }
@@ -164,7 +170,7 @@ header, .rows {
     .img-sections {
         padding: 0 10px;
     }
-    .imgs {
+    .imgs, .small-img {
         width: 40%;
         margin: 0 10px;
     }

@@ -1,0 +1,38 @@
+
+.collage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+.abt-img-sections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.collage-left {
+    width: 60%;
+}
+.collage-right{
+    width: 30%;
+}
+.big-img {
+    width: 45%;
+    margin: 5px 10px;
+    border-radius: 16px;
+}
+.pad-text {
+    padding:  0 15px;
+}
+
+.abt-desc {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.abt-imgs {
+    width: 25%;
+    margin: 5px 10px;
+    border-radius: 16px;
+}
