@@ -129,10 +129,20 @@ header, .rows {
 }
 .port, .imgs {
     width: 30%;
-    margin: 0 30px;
+    margin: 5px 30px;
     border-radius: 16px;
 }
 
+.info-arch {
+    width: 80%;
+}
+.logo-size {
+    width: 20%;
+    border-radius: 50%;
+}
+.color-palette {
+    width: 65%;
+}
 .wire-section, .img-sections{
     display: flex;
     flex-direction: row;
