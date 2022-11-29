@@ -4,11 +4,19 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 0;
+    justify-content: center;
 }
 .abt-img-sections{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.resize-img {
+    width: 27%;
+    margin: 5px 10px;
+    border-radius: 16px;
 }
 
 .collage-left {
@@ -27,7 +35,7 @@
 }
 
 .abt-desc {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.2;
 }
 
@@ -36,3 +44,98 @@
     margin: 5px 10px;
     border-radius: 16px;
 }
+
+.wow {
+    width: 80%;
+    margin: 5px 10px;
+    border-radius: 16px;
+}
+
+.picture-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em 2em;
+}
+
+.mytem {
+    width: 20%;
+    margin: 0.5em;
+    border-radius: 16px;
+}
+
+.body-text-wide {
+    width: 91%;
+    margin: auto;
+}
+
+.mytem-text {
+    width: 25%;
+    margin: 0.5em 1.25em;
+}
+.mytem-text-mobile {
+    display: none;
+}
+
+.phone-text {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .collage-left {
+        flex-direction: row;
+        overflow-wrap: normal;
+        width: initial;
+    }
+    .phone-text {
+        display: initial;
+    }
+    
+
+    .abt-desc, .pad-text {
+        display: none;
+    }
+
+    .collage{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0;
+        justify-content: center;
+    }
+    .mytem-text-mobile {
+        display: grid;
+    }
+    .mytem-text {
+        display: none;
+    }
+    
+  }
+
+  /* @media (max-width: 700px){
+
+    .abt-desc {
+      font-size: 13px;
+    }
+  } */
+  
+
+  .image-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em;
+  }
+
+  .mytem {
+    width: 20%;
+    margin: 0.5em;
+  }
+
+  .mytem-text {
+    margin: 0.5em 1.25em;
+  }
