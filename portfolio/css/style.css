@@ -102,10 +102,13 @@ a {
     margin: 10px 50px;
     border-radius: 20px;
 }
-.section-header {
+.section-header, .section-header-1 {
     font-weight: 900;
     font-size: 3vw;
     align-items: center;
+}
+.section-header-1 {
+  margin: 0 20px 0 0;
 }
 
 .icon {
@@ -132,7 +135,7 @@ a {
 }
 .body-text{
     font-weight: 500;
-    margin: 50px 0;
+    margin: 50px 20px 50px 0;
     font-size: 2.5vmin;
     align-items: center;
 }
@@ -142,7 +145,7 @@ a {
 .small-text {
   font-size: 16px;
 }
-
+ 
 .parent-flex {
     display: flex;
     flex-direction: row;
@@ -154,7 +157,7 @@ a {
   }
   
   .flex-item-left {
-    flex: 30%;
+    flex: 35%;
   }
 
   .jamjelly{
@@ -227,7 +230,7 @@ a {
   }
 
   .button:hover {
-    background-color: #669F3C;
+    box-shadow: inset 8em 0 0 0 #669F3C;
     color: white;
     border-style: solid;
     border-color: #669F3C;
@@ -244,10 +247,12 @@ a {
   }
 
   .services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     justify-items: center;
     padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
  .services-list-1{
@@ -320,10 +325,11 @@ a {
     opacity: 1;
   }
   .proj {
-    max-width: 100%;
+    flex: 1 0 30%;
+    /* max-width: 100%; */
     text-align: center;
     font-weight: 575;
-    position: relative;
+    /* position: relative; */
   }
 
   .proj-thumbnail {
@@ -335,6 +341,13 @@ a {
   @media screen and (max-width: 600px) {
     .flex-item-right, .flex-item-left, .left {
       flex: 100%;
+    }
+    .proj {
+      flex: 1 0 80%;
+      /* max-width: 100%; */
+      text-align: center;
+      font-weight: 575;
+      /* position: relative; */
     }
     .inner-flex {
       display: flex;
@@ -385,7 +398,7 @@ a {
       font-size: 15px;
       line-height: 180%;
     }
-    .section-header {
+    .section-header, .section-header-1 {
       font-size: 18px;
       line-height: 180%;
     }
