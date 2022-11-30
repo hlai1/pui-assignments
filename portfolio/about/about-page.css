@@ -11,6 +11,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .resize-img {
@@ -30,13 +31,11 @@
     margin: 5px 10px;
     border-radius: 16px;
 }
-.pad-text {
-    padding:  0 15px;
-}
 
 .abt-desc {
-    font-size: 15px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.6;
+    padding:  0 15px;
 }
 
 .abt-imgs {
@@ -83,7 +82,20 @@
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 920px){
+    .phone-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 775px){
+    .phone-text {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+}
+@media screen and (max-width: 1025px) {
     .collage-left {
         flex-direction: row;
         overflow-wrap: normal;
@@ -91,10 +103,12 @@
     }
     .phone-text {
         display: initial;
+        font-size: 14px;
+        line-height: 1.4;
     }
     
 
-    .abt-desc, .pad-text {
+    .abt-desc {
         display: none;
     }
 

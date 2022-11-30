@@ -28,13 +28,6 @@
     margin: auto;
 }
 
-iframe[src*="docs.google.com"],
-iframe[src*="youtube.com"],
-iframe[src*="player.vimeo.com"]{
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
 
 .video-container iframe, .video-container object, .video-container embed { 
     position: absolute; 
