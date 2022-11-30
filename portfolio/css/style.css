@@ -282,7 +282,16 @@ a {
   .proj-desc{
     margin: 0 10px;
     font-weight: 550;
+    font-size: 16px;
   }
+  .long {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 16px;
+}
+.short {
+    display: none;
+}
   .overlay {
     display: flex;
     position: absolute;
@@ -334,6 +343,22 @@ a {
     .primary-navigation {
       margin: 10px 25px 10px 0px;
     }
+    .proj-desc{
+      margin: 0 10px;
+      font-weight: 550;
+      font-size: 12px;
+      position: absolute; 
+      top: 26px;
+    }
+    .short {
+      margin: 0 10px;
+      font-weight: 550;
+      font-size: 12px;
+      display: initial;
+  }
+  .long{
+      display: none;
+  }
     
   }
 
@@ -341,6 +366,20 @@ a {
   @media (max-width: 850px){
     .body {
       margin: auto;
+    }
+    .short {
+      margin: 0 10px;
+      font-weight: 550;
+      font-size: 14px;
+      display: initial;
+  }
+  .long{
+      display: none;
+  }
+    .proj-desc{
+      margin: 0 10px;
+      font-weight: 550;
+      font-size: 14px;
     }
     .title-text {
       font-size: 15px;
@@ -367,4 +406,18 @@ a {
     .username{
       display: none;
     }
+    .proj-desc{
+      margin: 0 10px;
+      font-weight: 550;
+      font-size: 14px;
+    }
+    .short {
+      margin: 0 10px;
+      font-weight: 550;
+      font-size: 14px;
+      display: initial;
+  }
+  .long{
+    display: none;
+}
   }
