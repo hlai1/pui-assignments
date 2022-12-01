@@ -154,6 +154,17 @@ header, .rows {
     border-radius: 16px;
 }
 
+.fade-in {
+    /* opacity: 0; */
+    transform: translate(0, 5vh);
+    transition: all 1s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .small-img {
     width: 25%;
     margin: 5px 30px;

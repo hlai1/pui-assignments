@@ -1,5 +1,4 @@
 window.onload = function() {
-    console.log("WOW");
     animate();
 };
 
@@ -16,15 +15,12 @@ function animateItem(id){
     return animation;
 }
 
-var portfolioItems = [];
-
 function animate(){
     console.log("checkpoint 1...");
     for (let i = 1; i <= 6; i++) {
-        portfolioItems.push(animateItem(i));
-        console.log(i + ": " + animateItem(i));
-        easeIn(i, animateItem(i));
-        handleScroll(i, animateItem(i))
+        let objAnimate = animateItem(i);
+        easeIn(i, objAnimate);
+        handleScroll(i, objAnimate);
     }
 }
 
@@ -37,7 +33,7 @@ function handleScroll(id, animation) {
     let a = 0.25;
     let b = 0.90;
     let scrollFormula = (1/(h*(a-b)) * y - (H-a*h)/(h*(a-b)));
-    animation.seek(scrollFormula*500);
+    animation.seek(scrollFormula*400);
 }
 
 function easeIn(id, animation){
