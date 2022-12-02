@@ -18,6 +18,9 @@
 .color-palette {
     width: 65%;
 }
+.dark-green-font{
+    font: #007D3E;
+}
 .date {
     font-size: 16px;
     line-height: 1.6;
