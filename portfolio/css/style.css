@@ -194,8 +194,8 @@ a {
     margin: 0 20px;
     border-radius: 25px;
     border-style: solid;
-    border-color: #669F3C;
-    color: #669F3C;
+    border-color: #007D3E;
+    color: #007D3E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,10 +216,10 @@ a {
   }
 
   .button:hover {
-    box-shadow: inset 8em 0 0 0 #669F3C;
+    box-shadow: inset 8em 0 0 0 #007D3E;
     color: white;
     border-style: solid;
-    border-color: #669F3C;
+    border-color: #007D3E;
   }
 
   .footer {
