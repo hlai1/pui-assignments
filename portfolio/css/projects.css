@@ -16,7 +16,9 @@
     flex: 1;        /* distributes space on the line equally among items */
 }
 .color-palette {
-    width: 65%;
+    width: 60%;
+    margin: 7px 30px;
+    border-radius: 16px;
 }
 .dark-green-font{
     font: #007D3E;
