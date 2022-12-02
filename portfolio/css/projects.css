@@ -160,9 +160,14 @@ header, .rows {
         width: 75%;
         margin: auto;
     }
-    .description, .descriptions, .date {
+    .description, .descriptions {
         font-size: 12px;
         line-height: 1.2;
+    }
+    .date {
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 0 20px 0 0;
     }
     .imgs {
         width: 50%;
