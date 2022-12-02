@@ -164,8 +164,12 @@ header, .rows {
         font-size: 12px;
         line-height: 1.2;
     }
-    .imgs, .small-img {
+    .imgs {
         width: 50%;
+        margin: 0 10px;
+    }
+    .small-img {
+        width: 35%;
         margin: 0 10px;
     }
     .img-sections {
