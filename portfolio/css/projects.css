@@ -1,94 +1,95 @@
-
-.desc-parent {
-    display: flex;
-    flex-direction: column;
+.body {
+    line-height: 1.3;
 }
-
-.desc{
-    display: flex;
-    align-items: center;
+.body-text {
+    width: 75%;
+    margin: auto;
 }
-
+.body-text-big {
+    width: 55%;
+    margin: auto;
+}
+.bold {
+    font-weight: 600;
+}
+.col {
+    flex: 1;        /* distributes space on the line equally among items */
+}
+.color-palette {
+    width: 65%;
+}
 .date {
     font-size: 16px;
     line-height: 1.6;
     margin: 5px 0;
 }
-
-.video-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden; 
+.desc{
+    display: flex;
+    align-items: center;
 }
-
-.body-text-big {
-    width: 55%;
+.desc-parent {
+    display: flex;
+    flex-direction: column;
+}
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+.descriptions {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+header, .rows {
+    display: flex;  /* aligns all child elements (flex items) in a row */
+}
+.img-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
     margin: auto;
 }
-
-
-.video-container iframe, .video-container object, .video-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.info-arch {
+    width: 80%;
 }
-
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo-size {
+    width: 20%;
+    border-radius: 50%;
+}
+.pad {
+    padding: 0 15px 0 0;
+}
+.port, .imgs {
+    width: 30%;
+    margin: 5px 30px;
+    border-radius: 16px;
+}
+.proj-title {
+    font-size: 45px;
+    padding: 0 30px;
+    font-weight: 600;
+}
+.small-img {
+    width: 25%;
+    margin: 5px 30px;
+    border-radius: 16px;
+}
 .subhead {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 0 10px 0;
 }
-
-.proj-title {
-    font-size: 45px;
-    padding: 0 30px;
-    font-weight: 600;
-}
-
-.body {
-    line-height: 1.3;
-}
-
-.body-text {
-    width: 75%;
-    margin: auto;
-}
-
-.description {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 25px 0;
-}
-
-.descriptions {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0 0 10px 0;
-}
-
-.table {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-header, .rows {
-    display: flex;  /* aligns all child elements (flex items) in a row */
-  }
-  
-  .col {
-    flex: 1;        /* distributes space on the line equally among items */
-  }
-
-  .pad {
-    padding: 0 15px 0 0;
-  }
-
 .subheading {
     font-weight: 900;
     font-size: 24px;
@@ -96,12 +97,41 @@ header, .rows {
     margin: 10px 0;
     color: #45992f;
 }
-
-.intro {
+.table {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+.video-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+}
+.video-container iframe, .video-container object, .video-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.video-display {
+    width: 80%;
+    height: auto;
+}
+.video-embed {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.wire-section, .img-sections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 920px){
@@ -123,101 +153,26 @@ header, .rows {
     }
 }
 
-.img-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    /* margin: 3em 3em; */
-    width: 75%;
-    margin: auto;
-}
-
-.video-embed {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-.video-display {
-    width: 80%;
-    height: auto;
-}
-.bold {
-    font-weight: 600;
-}
-.port, .imgs {
-    width: 30%;
-    margin: 5px 30px;
-    border-radius: 16px;
-}
-
-.fade-in {
-    /* opacity: 0; */
-    transform: translate(0, 5vh);
-    transition: all 1s;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.small-img {
-    width: 25%;
-    margin: 5px 30px;
-    border-radius: 16px;
-}
-
-.info-arch {
-    width: 80%;
-}
-.logo-size {
-    width: 20%;
-    border-radius: 50%;
-}
-.color-palette {
-    width: 65%;
-}
-.wire-section, .img-sections{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
 @media only screen and (max-width: 775px){
     .body-text-big {
         width: 75%;
         margin: auto;
     }
-    .wire-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .port {
-        width: 75%;
-        padding: 10px 0;
-        border-radius: 10px;
-    }
-    .img-sections {
-        padding: 0 10px;
+    .description, .descriptions, .date {
+        font-size: 12px;
+        line-height: 1.2;
     }
     .imgs, .small-img {
         width: 40%;
         margin: 0 10px;
     }
-    .table {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .img-sections {
+        padding: 0 10px;
     }
-    .description, .descriptions, .date {
-        font-size: 12px;
-        line-height: 1.2;
+    .port {
+        width: 75%;
+        padding: 10px 0;
+        border-radius: 10px;
     }
     .proj-title {
         font-size: 24px;
@@ -230,5 +185,16 @@ header, .rows {
         align-items: center;
         margin: 10px 0;
         color: #45992f;
+    }
+    .table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wire-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

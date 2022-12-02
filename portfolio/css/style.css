@@ -91,13 +91,10 @@ a {
     margin: 10px 50px;
     border-radius: 20px;
 }
-.section-header, .section-header-1 {
+.section-header {
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 41px;
     align-items: center;
-}
-.section-header-1 {
-  margin: 0 20px 0 0;
 }
 
 .icon {
@@ -336,6 +333,11 @@ a {
       position: absolute; 
       top: 26px;
     }
+    .section-header {
+      font-weight: 900;
+      font-size: 18px;
+      align-items: center;
+    }
     .short {
       margin: 0 10px;
       font-weight: 550;
@@ -379,10 +381,11 @@ a {
       font-size: 15px;
       line-height: 180%;
     }
-    .section-header, .section-header-1 {
-      font-size: 18px;
-      line-height: 180%;
-    }
+    .section-header {
+      font-weight: 900;
+      font-size: 23px;
+      align-items: center;
+  }
     .small-text {
       font-size: 13px;
     }
