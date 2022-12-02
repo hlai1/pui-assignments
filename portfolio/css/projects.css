@@ -111,6 +111,11 @@ header, .rows {
     padding: 0 30px;
     font-weight: 600;
 }
+.project-list{
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
 .small-img {
     width: 25%;
     margin: 5px 30px;
