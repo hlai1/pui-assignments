@@ -2,16 +2,10 @@ a {
   color: #000;
   text-decoration: none;
 }
-
-.arrow {
-  width: 30px;
-  height: 30px;
-}
-
+/* project image blurred when hovered on index.html page */
 .blur {
   backdrop-filter: blur(3px);
 }
-
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
@@ -20,66 +14,47 @@ body {
   padding: 0;
   transition: color .3s ease,background-color .3s ease;
 }
-
-.button {
-  padding: 0 25px 0 20px;
-  margin: 0 20px;
-  border-radius: 25px;
-  border-style: solid;
-  border-color: #007D3E;
-  color: #007D3E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button:hover {
-  box-shadow: inset 8em 0 0 0 #007D3E;
-  color: white;
-  border-style: solid;
-  border-color: #007D3E;
-}
-
 .center {
   justify-content: center;
   padding: 7px 0 10px 0;
 }
-
+/* contact information flexbox at the bottom of each page */
 .contact {
   vertical-align: center;
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
-
 .flex {
   display: flex;
 }
-
+/* flex children on index.html page */
 .flex-item-left {
   flex: 35%;
 }
-
 .flex-item-right {
   flex: 60%;
 }
-
 .footer {
   padding: 7px;
 }
-
+.footer-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+}
 .green-font {
   color: #80B957;
   font-weight: 550;
 }
-
 .header {
     display: flex;
     flex-direction: row;
     padding: 0 30px;
     align-items: center;
 }
-
+/* format for personal logo */
 .huarui-logo {
   font-weight: bolder;
   width: 50px;
@@ -87,15 +62,11 @@ body {
   padding: 0 0 0 20px;
   background-color: rgba(255, 255, 255, 0);
 }
+/* icons in the footer of each page */
 .icon {
   width: 20px;
   height: 20px;
   padding: 0 5px;
-}
-.icon-big {
-  width: 30px;
-  height: 30px;
-  padding: 0 7px;
 }
 .image-display {
   border-radius: 4%;
@@ -111,56 +82,33 @@ body {
   align-items: center;
   padding: 0 0 0 50px;
 }
-
 .intro-text {
   flex: 0 1 auto;
 }
-
-.jamjelly{
-  z-index: 5;
-  display: none;
-}
-
-.jump {
-  flex: 1 0 auto;
-  margin: 10px 50px;
-  border-radius: 20px;
-}
-
 .left {
   flex: 60%;
   padding: 0 20px 0 15px;
 }
-
 .logo {
   margin: 1rem;
 }
-
+/* on:hover text that shows up for projects on index.html page */
 .long, .long-1 {
   margin: 0 10px;
   font-weight: 550;
   font-size: 16px;
 }
-
-.menu {
-    flex: 1 0 auto;
-    text-align: right;
-    
-}
-
 .navbar-item {
     margin: 0 50px;
     font-weight: 600;
 }
-
 .nav-bar{
   background-color: rgba(255, 255, 255, 0.9);
 }
-
 .no-blur {
   backdrop-filter: blur(0);
 }
-
+/*div that goes over project images to allow for blur on hover on index.html page */
 .overlay {
   display: flex;
   position: absolute;
@@ -176,11 +124,9 @@ body {
   color: black;
   transition: ease-in-out 0.6s;
 }
-
 .overlay:hover{
   opacity: 1;
 }
-
 .parent-flex {
   display: flex;
   flex-direction: row;
@@ -189,16 +135,7 @@ body {
   padding: 20px 45px 30px 45px;
   align-items: center;
 }
-
-.parent-flex-small{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 3.9vh;
-  padding: 20px 25px 30px 25px;
-  align-items: center;
-}
-
+/* header bar at the top of each page */
 .primary-header {
     align-items: center;
     justify-content: space-between;
@@ -209,14 +146,12 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 100;
 }
-
 .primary-navigation {
     list-style: none;
     padding: 0;
     margin: 0 50px;
     font-weight: 600;
 }
-
 .proj {
   margin: 20px;
   align-items: center;
@@ -224,79 +159,63 @@ body {
   text-align: center;
   font-weight: 575;
 
-  /* adding anime.js */
+  /* adding anime.js to allow for projects to face in */
   opacity: 0;
 }
-
 .proj-thumbnail {
   position: absolute;
 }
-
 .proj-desc{
   margin: 0 10px;
   font-weight: 550;
   font-size: 16px;
 }
-
 .right {
   padding: 0 15px 0 20px;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly; 
 }
-
+/* format for name on index.html page */
 .section-header {
   font-weight: 900;
   font-size: 41px;
   align-items: center;
 }
-
+/* format for personal description on index.html page */
 .section-text{
   font-weight: 500;
   margin: 10px 50px 10px 0;
   font-size: 20px;
   align-items: center;
 }
-
-.services {
+.project{
   padding: 15px 0 0 0; 
   position: relative;
 }
-
-.services-list{
+/* formatting for project flexbox items */
+.project-list{
   justify-items: center;
   padding: 15px 0;
   display: flex;
   flex-wrap: wrap;
 }
-
-.services-list-1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-}
-
 .short {
   display: none;
 }
-
 .show{
 display: inline;
 }
-
 .small-text {
   font-size: 16px;
 }
-
+/* navbar formatting for "about" and "resume" */
 .space {
     margin: 0 0 0 50px;
 }
-
 .space:hover {
     color: #80B957;
 }
@@ -305,170 +224,146 @@ display: inline;
   font-size: 16px;
 }
 
+/* display for contact information usernames in the footer of each page */
 .username, .username-1 {
   font-size: 14px;
 }
 
-
-
-
-
-
-
-
-  
-
-  
-  
-
-
-
- 
-
-
-
-
-  
-  
-
-  
-
-
-
-
-  /* Responsive layout - makes a one column-layout instead of a two-column layout */
-  @media screen and (max-width: 600px) {
-    .flex-item-right, .flex-item-left, .left {
-      flex: 100%;
-    }
-    .inner-flex {
-      display: flex;
-    }  
-    .long{
-      display: none;
-    }
-    .long-1 {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 12px;
-    }  
-    .parent-flex {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      font-size: 3.9vh;
-      padding: 20px 45px 20px 45px;
-      align-items: center;
-    }
-    .primary-navigation {
-      margin: 10px 25px 10px 0px;
-    }
-    .proj {
-      flex: 1 0 80%;
-      text-align: center;
-      font-weight: 575;
-    }
-    .proj-desc{
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 12px;
-      position: absolute; 
-      top: 26px;
-    }
-    .section-header {
-      font-weight: 900;
-      font-size: 18px;
-      align-items: center;
-    }
-    .section-text{
-      font-weight: 500;
-      margin: 10px 20px 10px 0;
-      font-size: 15px;
-      align-items: center;
-    }
-    .services {
-      position: relative;
-      padding: initial;
-    }
-    .services-list{
-      justify-items: center;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .short {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 12px;
-      display: initial;
-    }    
+/* phone layout */
+@media screen and (max-width: 600px) {
+  .flex-item-right, .flex-item-left, .left {
+    flex: 100%;
   }
+  .inner-flex {
+    display: flex;
+  }  
+  .long{
+    display: none;
+  }
+  .long-1 {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 12px;
+  }  
+  .parent-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 3.9vh;
+    padding: 20px 45px 20px 45px;
+    align-items: center;
+  }
+  .primary-navigation {
+    margin: 10px 25px 10px 0px;
+  }
+  .proj {
+    flex: 1 0 80%;
+    text-align: center;
+    font-weight: 575;
+  }
+  .proj-desc{
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 12px;
+    position: absolute; 
+    top: 26px;
+  }
+  .project {
+    position: relative;
+    padding: initial;
+  }
+  .project-list{
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-header {
+    font-weight: 900;
+    font-size: 18px;
+    align-items: center;
+  }
+  .section-text{
+    font-weight: 500;
+    margin: 10px 20px 10px 0;
+    font-size: 15px;
+    align-items: center;
+  }
+  .short {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 12px;
+    display: initial;
+  }    
+}
 
-  @media (max-width: 850px){
-    .body {
-      margin: auto;
-    }
-    .content{
-      display: none;
-    }
-    .long{
-      display: none;
-    }
-    .long-1 {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-    }   
-    .proj-desc{
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-    }
-    .section-header {
-      font-weight: 900;
-      font-size: 27px;
-      align-items: center;
-    }
-    .section-text{
-      font-weight: 500;
-      margin: 10px 20px 10px 0;
-      font-size: 17px;
-      align-items: center;
-    }
-    .services-list-1{
-      display: flex;
-      justify-content: center;
-    }   
-    .short {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-      display: initial;
-    }
-    .small-text {
-      font-size: 13px;
-    }
-    .title-text {
-      font-size: 15px;
-      line-height: 180%;
-    }
+/* tablet layout */
+@media (max-width: 850px){
+  .body {
+    margin: auto;
   }
-  
-  @media (max-width: 1000px){
-    .long{
-      display: none;
-    }
-    .proj-desc{
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-    }
-    .short {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-      display: initial;
-    }
-    .username{
-      display: none;
-    }    
+  .content{
+    display: none;
   }
+  .long{
+    display: none;
+  }
+  .long-1 {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+  }   
+  .proj-desc{
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+  }
+  .section-header {
+    font-weight: 900;
+    font-size: 27px;
+    align-items: center;
+  }
+  .section-text{
+    font-weight: 500;
+    margin: 10px 20px 10px 0;
+    font-size: 17px;
+    align-items: center;
+  }
+  .project-list-1{
+    display: flex;
+    justify-content: center;
+  }   
+  .short {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+    display: initial;
+  }
+  .small-text {
+    font-size: 13px;
+  }
+  .title-text {
+    font-size: 15px;
+    line-height: 180%;
+  }
+}
+
+/* minimized desktop view */
+@media (max-width: 1000px){
+  .long{
+    display: none;
+  }
+  .proj-desc{
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+  }
+  .short {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+    display: initial;
+  }
+  .username{
+    display: none;
+  }    
+}

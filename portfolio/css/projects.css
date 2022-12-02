@@ -1,3 +1,8 @@
+/* previous and next arrows on project pages */
+.arrow {
+    width: 30px;
+    height: 30px;
+  }
 /* format for the body of each project webpage */
 .body {
     line-height: 1.3;
@@ -14,6 +19,24 @@
 .bold {
     font-weight: 600;
 }
+/* previous and next buttons on project pages */
+.button {
+    padding: 0 25px 0 20px;
+    margin: 0 20px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #007D3E;
+    color: #007D3E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button:hover {
+    box-shadow: inset 8em 0 0 0 #007D3E;
+    color: white;
+    border-style: solid;
+    border-color: #007D3E;
+  }
 /* distributes space on the line equally among columns in a flexbox */
 .col {
     flex: 1;
