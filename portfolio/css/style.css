@@ -87,28 +87,23 @@ body {
   padding: 0 0 0 20px;
   background-color: rgba(255, 255, 255, 0);
 }
-
 .icon {
   width: 20px;
   height: 20px;
   padding: 0 5px;
 }
-
 .icon-big {
   width: 30px;
   height: 30px;
   padding: 0 7px;
 }
-
 .image-display {
   border-radius: 4%;
   width: 100%;
 }
-
 .inner-flex {
   display: flex;
 }
-
 .intro {
   display: flex;
   flex-direction: row;
