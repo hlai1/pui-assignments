@@ -1,3 +1,24 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.blur {
+  backdrop-filter: blur(3px);
+}
+
+.button:hover {
+  box-shadow: inset 8em 0 0 0 #007D3E;
+  color: white;
+  border-style: solid;
+  border-color: #007D3E;
+}
+
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
@@ -5,11 +26,6 @@ body {
   margin: 0;
   padding: 0;
   transition: color .3s ease,background-color .3s ease;
-}
-
-.image-display {
-  border-radius: 4%;
-  width: 100%;
 }
 
 .button {
@@ -25,6 +41,30 @@ body {
 
 }
 
+.contact {
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-item-left {
+  flex: 35%;
+}
+
+.flex-item-right {
+  flex: 60%;
+}
+
+.green-font {
+  color: #80B957;
+  font-weight: 550;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -32,11 +72,75 @@ body {
     align-items: center;
 }
 
+.huarui-logo {
+  font-weight: bolder;
+  width: 50px;
+  color: #D0ECBC;
+  padding: 0 0 0 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 0 5px;
+}
+
+.icon-big {
+width: 30px;
+height: 30px;
+padding: 0 7px;
+}
+
+.image-display {
+  border-radius: 4%;
+  width: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 0 0 50px;
+}
+
+.intro-text {
+  flex: 0 1 auto;
+}
+
+.jamjelly{
+  z-index: 5;
+  display: none;
+}
+
+.jump {
+  flex: 1 0 auto;
+  margin: 10px 50px;
+  border-radius: 20px;
+}
+
+.left {
+  flex: 60%;
+  padding: 0 20px 0 15px;
+}
+
+.logo {
+  margin: 1rem;
+}
+
+.long, .long-1 {
+  margin: 0 10px;
+  font-weight: 550;
+  font-size: 16px;
+}
+
 .menu {
     flex: 1 0 auto;
     text-align: right;
     
 }
+
 .navbar-item {
     margin: 0 50px;
     font-weight: 600;
@@ -45,25 +149,43 @@ body {
 .nav-bar{
   background-color: rgba(255, 255, 255, 0.9);
 }
-a {
-    color: #000;
-    text-decoration: none;
+
+.overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:rgba(255, 255, 255, 0.6);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-weight: 500;
+  color: black;
+  transition: ease-in-out 0.6s;
 }
 
-.huarui-logo {
-    font-weight: bolder;
-    width: 50px;
-    color: #D0ECBC;
-    padding: 0 0 0 20px;
-    background-color: rgba(255, 255, 255, 0);
+.overlay:hover{
+  opacity: 1;
 }
 
-.flex {
-    display: flex;
+.parent-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 3.9vh;
+  padding: 20px 45px 30px 45px;
+  align-items: center;
 }
 
-.logo {
-    margin: 1rem;
+.parent-flex-small{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 3.9vh;
+  padding: 20px 25px 30px 25px;
+  align-items: center;
 }
 
 .primary-header {
@@ -84,6 +206,82 @@ a {
     font-weight: 600;
 }
 
+.proj {
+  margin: 20px;
+  align-items: center;
+  flex: 1 0 30%;
+  text-align: center;
+  font-weight: 575;
+
+  /* adding anime.js */
+  opacity: 0;
+}
+
+.proj-thumbnail {
+  position: absolute;
+}
+
+.proj-desc{
+  margin: 0 10px;
+  font-weight: 550;
+  font-size: 16px;
+}
+
+.right {
+  padding: 0 15px 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly; 
+}
+
+.section-header {
+  font-weight: 900;
+  font-size: 41px;
+  align-items: center;
+}
+
+.section-text{
+  font-weight: 500;
+  margin: 10px 20px 10px 0;
+  font-size: 20px;
+  align-items: center;
+}
+
+.services {
+  padding: 15px 0 0 0; 
+  position: relative;
+}
+
+.services-list{
+  justify-items: center;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-list-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+}
+
+.short {
+  display: none;
+}
+
+.show{
+display: inline;
+}
+
+.small-text {
+  font-size: 16px;
+}
+
 .space {
     margin: 0 0 0 50px;
 }
@@ -92,127 +290,30 @@ a {
     color: #80B957;
 }
 
-.intro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 0 0 50px;
-}
-
-.intro-text {
-    flex: 0 1 auto;
-}
-
-.jump {
-    flex: 1 0 auto;
-    margin: 10px 50px;
-    border-radius: 20px;
-}
-.section-header {
-    font-weight: 900;
-    font-size: 41px;
-    align-items: center;
-}
-.icon {
-    width: 20px;
-    height: 20px;
-    padding: 0 5px;
-}
-.icon-big {
-  width: 30px;
-  height: 30px;
-  padding: 0 7px;
-}
-.contact {
-    vertical-align: center;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-.green-font {
-    color: #80B957;
-    font-weight: 550;
-}
 .title-text{
   font-size: 16px;
 }
-.small-text {
-  font-size: 16px;
-}
-.parent-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 3.9vh;
-    padding: 20px 45px 30px 45px;
-    align-items: center;
-  }
-  .flex-item-left {
-    flex: 35%;
-  }
 
-  .jamjelly{
-    z-index: 5;
-    display: none;
-  }
-  .section-text{
-    font-weight: 500;
-    margin: 10px 20px 10px 0;
-    font-size: 20px;
-    align-items: center;
-  }
-.show{
-  display: inline;
+.username, .username-1 {
+  font-size: 14px;
 }
 
-.left {
-  flex: 60%;
-}
 
-.flex-item-right {
-  flex: 60%;
-}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly; 
-}
 
-.proj {
-    margin: 20px;
-    align-items: center;
 
-    /* adding anime.js */
-    opacity: 0;
-}
 
-.services {
-  padding: 15px 0 0 0; 
-  position: relative;
-}
 
-.left {
-  padding: 0 20px 0 15px;
-}
 
-  .right {
-    padding: 0 15px 0 20px;
-  }
+  
 
-  .arrow {
-    width: 30px;
-    height: 30px;
-  }
+  
+  
 
-  .button:hover {
-    box-shadow: inset 8em 0 0 0 #007D3E;
-    color: white;
-    border-style: solid;
-    border-color: #007D3E;
-  }
+
+
+ 
+
 
   .footer {
     padding: 7px;
@@ -223,87 +324,19 @@ a {
     padding: 7px 0 10px 0;
   }
 
-  .services-list{
-    justify-items: center;
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- .services-list-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-  }
-
-  .username, .username-1 {
-    font-size: 14px;
-  }
-
   .inner-flex {
     display: flex;
   }
 
-  .parent-flex-small{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 3.9vh;
-    padding: 20px 25px 30px 25px;
-    align-items: center;
-  }
+  
+  
 
-  .proj-desc{
-    margin: 0 10px;
-    font-weight: 550;
-    font-size: 16px;
-  }
-  .long, .long-1 {
-    margin: 0 10px;
-    font-weight: 550;
-    font-size: 16px;
-}
-.short {
-    display: none;
-}
-  .overlay {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background:rgba(255, 255, 255, 0.6);
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    font-weight: 500;
-    color: black;
-    transition: ease-in-out 0.6s;
-  }
-
-  .blur {
-    backdrop-filter: blur(3px);
-  }
+  
 
   .no-blur {
     backdrop-filter: blur(0);
   }
- 
-  .overlay:hover{
-    opacity: 1;
-  }
 
-  .proj {
-    flex: 1 0 30%;
-    text-align: center;
-    font-weight: 575;
-  }
-
-  .proj-thumbnail {
-    position: absolute;
-  }
 
   /* Responsive layout - makes a one column-layout instead of a two-column layout */
   @media screen and (max-width: 600px) {
