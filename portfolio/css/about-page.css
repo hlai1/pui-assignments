@@ -62,8 +62,15 @@
     justify-content: space-between;
     margin: 3em 2em;
 }
+/* resizing the pyramid image */
 .resize-img {
     width: 27%;
+    margin: 5px 10px;
+    border-radius: 16px;
+}
+/* resizing the booth image */
+.resize-img-2 {
+    width: 25.5%;
     margin: 5px 10px;
     border-radius: 16px;
 }
