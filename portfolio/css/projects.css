@@ -31,12 +31,20 @@
     align-items: center;
     justify-content: center;
   }
-  .button:hover {
+.button:hover {
     box-shadow: inset 8em 0 0 0 #007D3E;
     color: white;
     border-style: solid;
     border-color: #007D3E;
-  }
+}
+:root {
+    --knopf-hue: 164;
+    --knopf-saturation: 88%;
+    --knopf-luminosity: 28%;
+}
+.spacing {
+    margin: 0 10px;
+}
 /* distributes space on the line equally among columns in a flexbox */
 .col {
     flex: 1;
