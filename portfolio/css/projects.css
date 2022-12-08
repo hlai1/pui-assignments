@@ -37,14 +37,6 @@
     border-style: solid;
     border-color: #007D3E;
 }
-:root {
-    --knopf-hue: 164;
-    --knopf-saturation: 88%;
-    --knopf-luminosity: 28%;
-}
-.spacing {
-    margin: 0 10px;
-}
 /* distributes space on the line equally among columns in a flexbox */
 .col {
     flex: 1;
@@ -124,10 +116,19 @@ header, .rows {
     display: flex;
     flex-wrap: wrap;
 }
+/* for library knopf.css buttons */
+:root {
+    --knopf-hue: 164;
+    --knopf-saturation: 88%;
+    --knopf-luminosity: 28%;
+}
 .small-img {
     width: 25%;
     margin: 5px 30px;
     border-radius: 16px;
+}
+.spacing {
+    margin: 0 10px;
 }
 /* flexbox for project overview section at the top of each project page */
 .subhead {
